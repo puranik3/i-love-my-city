@@ -1,0 +1,16 @@
+<% include partials/head.ejs %>
+<% include partials/navbar.ejs %>
+
+<div class="container">
+    <h1 class="text-center"><%= currentCity.title + ': ' + currentCity.heading %></h1>
+
+    <div class="row">
+        <% for( let i = 1; i <= currentCity.numImages; i++ ) { %>
+            <div class="col-sm-6">
+                <img src="images/<%= currentCity.city %>/<%= currentCity.city %>-<%= i %>.jpg" />
+            </div>
+        <% } %>
+    </div>
+</div>
+
+<% include partials/foot.ejs %>
