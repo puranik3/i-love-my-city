@@ -1,0 +1,1 @@
+web: DEBUG=02-i-love-my-city:* npm start
